@@ -54,6 +54,10 @@
     font-size: 0.9em;
 }
 
+.timeframe.active {
+    color: white;
+}
+
 .timeframe:hover {
     color: white;
 }

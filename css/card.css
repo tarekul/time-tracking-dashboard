@@ -60,14 +60,28 @@
     border-radius: 10px;
 }
 
+.content:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+.content img {
+    align-self: flex-end;
+}
+
+.content img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .card_title {
-    font-size: 0.8em;
+    font-size: clamp(0.1em, 2vw +0.2em, 0.8em);
     font-weight: 300;
     color: white;
 }
 
 .card_time {
-    font-size: 2em;
+    font-size: clamp(1em, 2vw + 1em, 2em);
     font-weight: 300;
     color: white;
 }
