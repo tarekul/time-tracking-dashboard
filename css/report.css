@@ -1,0 +1,57 @@
+@import url('./styles.css');
+
+.report {
+    grid-column: 1;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    width: 100%;
+}
+
+#jeremy {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1em
+}
+
+
+.report__name {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: var(--blue);
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.report_for {
+    font-size: 0.8em;
+}
+
+.name {
+    font-size: 1.5em;
+}
+
+.report__toggle {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.2em;
+    background-color: var(--dark-blue);
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: -0.7em;
+}
+
+.timeframe {
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    font-size: 0.9em;
+}
