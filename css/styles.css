@@ -43,7 +43,7 @@ p {
     grid-template-rows: repeat(2, 1fr);
     gap: 2em;
     margin: auto;
-    width: 40%;
+    width: 60%;
     height: 40%;
 }
 
