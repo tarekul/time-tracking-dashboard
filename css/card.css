@@ -87,13 +87,13 @@
 }
 
 .current {
-    font-size: clamp(1em, 2vw + 1em, 2em);
+    font-size: clamp(1em, 2vw + 1em, 3em);
     font-weight: 300;
     color: white;
 }
 
 .previous {
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 300;
     color: var(--pale-blue);
 }
