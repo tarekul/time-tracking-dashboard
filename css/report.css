@@ -61,3 +61,10 @@
 .timeframe:hover {
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .report {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+}

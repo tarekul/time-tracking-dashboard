@@ -1,3 +1,9 @@
+const periods = {
+    'daily': 'Yesterday',
+    'weekly': 'Last Week',
+    'monthly': 'Last Month'
+}
+
 fetch('./data.json')
     .then((response) => response.json())
     .then((data) => {
@@ -15,10 +21,10 @@ function updateCards(data, period = 'daily') {
     const cards = document.querySelectorAll('.card');
     data.forEach((item, index) => {
         cards[index].querySelector('.card_title').textContent = item.title;
-        cards[index].querySelector('.card_time').textContent =
+        cards[index].querySelector('.current').textContent =
             item.timeframes[period].current + 'hrs';
-        cards[index].querySelector('.card_last').textContent =
-            'Last Week - ' + item.timeframes[period].previous + 'hrs';
+        cards[index].querySelector('.previous').textContent =
+            `${periods[period]} - ` + item.timeframes[period].previous + 'hrs';
     });
 }
 

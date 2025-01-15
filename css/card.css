@@ -81,13 +81,31 @@
 }
 
 .card_time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.current {
     font-size: clamp(1em, 2vw + 1em, 2em);
     font-weight: 300;
     color: white;
 }
 
-.card_last {
+.previous {
     font-size: 0.6em;
     font-weight: 300;
-    color: white;
+    color: var(--pale-blue);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .card_time {
+        flex-direction: row;
+        align-items: center;
+    }
 }

@@ -25,11 +25,12 @@ body {
     font-weight: 300;
     background-color: var(--very-dark-blue);
     color: var(--pale-blue);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 p {
@@ -44,4 +45,14 @@ p {
     margin: auto;
     width: 40%;
     height: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 80%;
+        height: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        overflow: scroll;
+    }
 }
